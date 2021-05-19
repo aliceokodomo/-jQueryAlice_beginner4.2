@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercice 2.2</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    Au double click, modifier la largeur de l'image à 500px;
+    <img src="images/image.jpg" id="image" alt="image PHP" />
+    <script>
+        $(document).ready(function() {
+            $("#image").dblclick(function() {
+                $("img").css({
+                    "width": "500px",
+                    "height": "auto"
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>
